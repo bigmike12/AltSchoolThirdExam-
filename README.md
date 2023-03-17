@@ -1,4 +1,4 @@
-# Github Repo Project 
+# Vue COunter App 
 
 This project was built with Vue and VueX state management
 
