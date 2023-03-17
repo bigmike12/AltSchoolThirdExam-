@@ -1,4 +1,4 @@
-# Vue COunter App 
+# Vue Counter App 
 
 This project was built with Vue and VueX state management
 
