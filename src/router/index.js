@@ -4,6 +4,10 @@ import NotFound from "../components/NotFound.vue";
 
 const routes = [
   {
+    path: "/",
+    redirect: "/counter",
+  },
+  {
     path: "/counter",
     name: "Counter",
     component: Counter,
