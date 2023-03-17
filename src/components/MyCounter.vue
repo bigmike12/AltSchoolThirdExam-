@@ -1,16 +1,16 @@
 <template>
   <div class="counter">
-    <h1>Counter</h1>
+    <h1>Counter App with VueX</h1>
     <div>
       <button @click="increment">+</button>
       <button @click="decrement">-</button>
       <button @click="reset">Reset</button>
     </div>
     <div class="input">
-      Set Count,
-      <input @input="setCounter" type="text" placeholder="Set Count" />
+      Set Count:
+      <input @input="setCounter" type="number" placeholder="Input Number" />
     </div>
-    <p>Count: {{ counter }}</p>
+    <p class="display">Counter: {{ counter }}</p>
   </div>
 </template>
 
@@ -26,7 +26,7 @@ export default {
       this.$store.dispatch("increment");
     },
     decrement() {
-      this.$store.dispatch("decrement");
+      this.$store.getters.counter > 0 && this.$store.dispatch("decrement");
     },
     reset() {
       this.$store.dispatch("reset");
@@ -65,5 +65,15 @@ export default {
 .input {
   margin-top: 10px;
   display: flex;
+}
+
+.input input {
+  margin-left: 10px;
+  border-radius: 30px;
+  padding-left: 10px;
+}
+
+.display {
+font-size: 40px;
 }
 </style>
