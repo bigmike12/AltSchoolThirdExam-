@@ -1,24 +1,11 @@
-# counter-app
+# Github Repo Project 
 
-## Project setup
-```
-yarn install
-```
+This project was built with Vue and VueX state management
 
-### Compiles and hot-reloads for development
-```
-yarn serve
-```
+HOSTED LINK: https://alt-school-third-exam-bigmike12.vercel.app//
 
-### Compiles and minifies for production
-```
-yarn build
-```
+## Available Scripts
 
-### Lints and fixes files
-```
-yarn lint
-```
+In the project directory, you can run:
 
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
+### `yarn serve`
